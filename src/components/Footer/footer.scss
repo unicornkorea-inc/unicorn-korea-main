@@ -1,0 +1,90 @@
+footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	div {
+		padding: 64px 24px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		max-width: 1200px;
+
+		&.mobile {
+			display: flex;
+			flex-direction: column;
+			img {
+				margin-bottom: 32px;
+			}
+		}
+		main {
+			p {
+				display: flex;
+				align-items: center;
+	
+				&.buttons {
+					margin-top: 40px;
+					button {
+						min-width: fit-content;
+						padding: 0;
+					}
+					.divider {
+						margin: 0 24px;
+						width: 2px;
+						height: 12px;
+					}
+					@media screen and (max-width: 768px) {
+						margin-top: 24px;
+						button {
+							font-size: 14px;
+						}
+						.divider {
+							margin: 0 16px;
+						}
+					}
+				}
+			}
+			.name {
+				margin: 0;
+				font-size: 22px;
+				color: #374553;
+				font-weight: 700;
+				@media screen and (max-width: 768px) {
+					font-size: 18px;
+				}
+			}
+			.title {
+				font-size: 18px;
+				font-weight: 700;
+				margin-right: 16px;
+				color: #374553;
+				min-width: fit-content;
+				@media screen and (max-width: 768px) {
+					font-size: 12px;
+				}
+			}
+			.content {
+				font-size: 18px;
+				font-weight: 400;
+				color: #374553;
+				min-width: fit-content;
+				@media screen and (max-width: 768px) {
+					font-size: 12px;
+				}
+			}
+			button {
+				font-weight: 600;
+				font-size: 18px;
+				color: #646f7c;
+				border: none;
+				background-color: white;
+			}
+		}
+		.logo {
+			max-width: 216px;
+			@media screen and (max-width: 768px) {
+				width: 80px;
+			}
+		}
+
+	}
+}

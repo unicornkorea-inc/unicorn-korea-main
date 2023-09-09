@@ -1,0 +1,52 @@
+.terms {
+    background-color: white;
+    padding-top: 40px;
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        width: calc(100% - 32px);
+        height: calc(100vh - 80px);
+        margin-bottom: 50px;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .title-and-button {
+        background-color: white;
+        position: sticky;
+        margin-top: -40px;
+        top: -40px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        h1 {
+            margin: 0;
+            @media screen and (max-width: 768px) {
+                padding: 0;
+            }
+        }
+        button {
+            background-color: white;
+            border: none;
+            font-size: 20px;
+            color: #374553;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            padding: 0 16px;
+            margin-top: 0;
+        }
+    }
+    .contents {
+        background-color: #f2f4f6;
+        padding: 24px 14px 0;
+        padding-bottom: 64px;
+        @media screen and (max-width: 768px) {
+            overflow: scroll;
+            height: calc(100vh - 135px);
+            padding-bottom: 64px;
+        }
+    }
+}

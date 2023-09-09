@@ -1,0 +1,31 @@
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 1200px;
+        &.main {
+            max-width: 1920px;
+        }
+    }
+
+    .mobile {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+            overflow: hidden;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        img {
+            width: 100%;
+        }
+    }
+}
