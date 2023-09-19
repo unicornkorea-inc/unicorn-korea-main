@@ -1,11 +1,5 @@
 .news-section-wrapper {
     width: 100%;
-    overflow: scroll;
-    -ms-overflow-style: none; /* IE, Edge */
-    scrollbar-width: none; /* Firefox */
-    &::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera*/
-    }
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center; 
@@ -18,10 +12,9 @@
         margin-top: 48px;
         @media screen and (max-width: 768px) {
             display: flex;
-            flex-direction: row;
-            overflow: scroll;
+            flex-direction: column;
             padding: 0;
-            width: fit-content;
+            width: 100%;
             gap: 0;
         }
         @media screen and (min-width: 768px) {
@@ -31,13 +24,10 @@
             height: 100%;
             max-width: 1200px;
             overflow: hidden;
+            margin-bottom: 32px;
     
             @media screen and (max-width: 768px) {
                 padding: 0 4px;
-                width: calc(100% - 32px); 
-                &:first-child {
-                    padding-left: 8px;
-                }
             }
             
             img {

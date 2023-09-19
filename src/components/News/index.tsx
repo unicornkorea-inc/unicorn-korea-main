@@ -1,6 +1,7 @@
 import ImageContent from "../common/ImageContent";
 import "./news.scss";
 import { NewsSection } from "./NewsSection";
+import { PolicyNews } from "./PolicyNews";
 
 export const News = () => {
   return (
@@ -36,6 +37,7 @@ export const News = () => {
       </section>
       <p className="section-title news-title">유니콘코리아 뉴스</p>
       <NewsSection />
+      <PolicyNews />
     </section>
   );
 };
