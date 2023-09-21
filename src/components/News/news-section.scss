@@ -64,7 +64,9 @@
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
             }
-            a {
+            button {
+                border: none;
+                box-shadow: none;
                 text-decoration: none;
                 padding: 16px 24px;
                 border-radius: 52px;

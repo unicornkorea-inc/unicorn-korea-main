@@ -12,6 +12,7 @@ import Terms from "../Footer/Terms";
 import MobileMenu from "../Header/MobileMenu";
 import { NewsSection } from "../News/NewsSection";
 import "./styles.scss";
+import MainSuccessStories from "./MainSuccessStories";
 
 export const Main = () => {
   const modalOpen = useRecoilValue(modalOpenState);
@@ -37,13 +38,7 @@ export const Main = () => {
         backgroundColor="#011221"
         isMain
       />
-      <ImageContent
-        src="/img/main/main_02.png"
-        mobileSrc="/img/main/mobile/main_02.png"
-        alt="메인 이미지"
-        backgroundColor="#f8f9fb"
-        isMain
-      />
+      <MainSuccessStories />
       <ImageContent
         src="/img/main/main_03.png"
         mobileSrc="/img/main/mobile/main_03.png"

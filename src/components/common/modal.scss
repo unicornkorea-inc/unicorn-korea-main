@@ -34,9 +34,35 @@
             border-radius: 0;
             margin: 0;
             padding: 0;
-            &.ask {
+            &.scroll {
                 overflow: scroll;
             }
+        }
+    }
+    .news-detail {
+        padding: 32px;
+        @media screen and (min-width: 768px) {
+            padding-top: 0;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        button {
+            float: right;
+            background-color: white;
+            border: none;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            position: absolute;
+            top: 24px;
+            right: 24px;            
         }
     }
 }

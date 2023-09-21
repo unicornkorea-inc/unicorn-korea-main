@@ -19,7 +19,15 @@ const Modal = ({ children }: { children: any }) => {
   return (
     <div className="modal-wrapper">
       <Dimmed />
-      <section className={`modal ${pathname === "/ask" ? "ask" : ""}`}>
+      <section
+        className={`modal ${
+          pathname === "/ask" ||
+          pathname === "/news-detail" ||
+          pathname === "/success-story"
+            ? "scroll"
+            : ""
+        }`}
+      >
         {children}
       </section>
     </div>

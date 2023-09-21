@@ -1,0 +1,94 @@
+.main-success-stories-wrapper {
+    background-color: #f8f9fb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .main-success-stories {
+        padding: 24px;
+        max-width: 1200px;
+        .success-section-title {
+            color: #28323C;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                font-weight: 700;  
+            }
+        }
+        .bold {
+            color: #374553;
+            font-size: 20px;
+            font-weight: 600;
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+        .normal {
+            color: #374553;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 60px;
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 32px;
+            }
+        }
+        .main-success-stories-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 18px;
+            padding-bottom: 100px;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 12px;
+                padding-bottom: 32px;
+            }
+            .main-success-story {
+                border: none;
+                text-align: left;
+                display: block;
+                padding: 32px 24px;
+                background-color: white;
+                border-radius: 16px;
+                box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.15);
+                img {
+                    width: 110px;
+                    height: 110px;
+                    @media screen and (max-width: 768px) {
+                        width: 72px;
+                        height: 72px;
+                    }
+                }
+                .name {
+                    color: #161d24;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+                .representative {
+                    color: #161d24;
+                    font-size: 28px;
+                    font-weight: 700;
+                    padding-bottom: 23px;
+                    border-bottom: 1px solid #dee4ed;
+                    @media screen and (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+                .subtitle {
+                    color: #012066;
+                    font-size: 20px;
+                    font-weight: 600;
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
