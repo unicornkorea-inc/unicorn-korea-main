@@ -1,72 +1,74 @@
 .success-story-page {
-    button {
-        float: right;
-        background-color: white;
-        border: none;
-        img {
-            width: 24px;
-            height: 24px;
-        }
-        position: absolute;
-        top: 24px;
-        right: 24px;            
+  button {
+    float: right;
+    background-color: white;
+    border: none;
+    img {
+      width: 24px;
+      height: 24px;
     }
-    .success-story {
-        padding: 32px;
-        @media screen and (min-width: 768px) {
-            padding-top: 0;
-        }
-        .success-header {
-            display: flex;
-            margin-bottom: 16px;
-            img {
-                margin-right: 16px;
-                height: 90px;
-                width: 90px;
-            }
-            .name {
-                color: #161d24;
-                font-size: 14px;
-                font-weight: 500;
-                margin-bottom: 4px;
-            }
-            .representative {
-                margin: 0 0 6px;
-                color: #161d24;
-                font-size: 24px;
-                font-weight: 700;
-            }
-            .subtitle {
-                margin: 0;
-                color: #012066;
-                font-size: 14px;
-                font-weight: 600;
-            }
-        }
-        .tags {
-            height: 100%;
-            .tag {
-                line-height: 40px;
-                white-space: pre;
-                min-width: fit-content;
-                padding: 6px 12px;
-                background-color: #ccdcff;
-                border-radius: 8px;
-                color: #012066;
-                font-size: 13px;
-                font-weight: 600;
-                width: fit-content;
-                margin-right: 12px;
-            }
-        }
-        .content {
-            margin-top: 16px;
-            padding: 16px;
-            border-radius: 16px;
-            background-color: #f8f9fb;
-            color: #161d24;
-            font-size: 13px;
-            font-weight: 400;
-        }
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .success-story {
+    padding: 32px;
+    height: 750px;
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      height: 550px;
     }
+    .success-header {
+      display: flex;
+      margin-bottom: 16px;
+      img {
+        margin-right: 16px;
+        height: 90px;
+        width: 90px;
+      }
+      .name {
+        color: #161d24;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .representative {
+        margin: 0 0 6px;
+        color: #161d24;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .subtitle {
+        margin: 0;
+        color: #012066;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .tags {
+      height: fit-content;
+      .tag {
+        line-height: 40px;
+        white-space: pre;
+        min-width: fit-content;
+        padding: 6px 12px;
+        background-color: #ccdcff;
+        border-radius: 8px;
+        color: #012066;
+        font-size: 13px;
+        font-weight: 600;
+        width: fit-content;
+        margin-right: 12px;
+      }
+    }
+    .content {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 16px;
+      background-color: #f8f9fb;
+      color: #161d24;
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
 }

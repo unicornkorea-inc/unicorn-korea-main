@@ -1,76 +1,98 @@
 .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+  width: 100%;
+  overflow: scroll;
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+    .desktop-success-stories {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .mobile-success-stories {
+      display: none;
+    }
+    .desktop-success-stories {
+      .slick-slide:last-child {
+        .success-story-page {
+          padding-right: 72px;
+        }
+      }
+    }
+  }
+  .slick-track {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 120px;
-    width: 100%;
-    overflow: scroll;
+    width: 560px !important;
+  }
+  .section-title {
+    width: 1200px;
+    color: #28323c;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    &.policy-news {
+      margin-top: 200px;
+    }
     @media screen and (max-width: 768px) {
-        overflow: hidden;
+      font-size: 24px;
+      margin: 0 0 -40px;
+      padding: 32px 24px;
+      width: 90%;
+      &.news-title {
+        padding-bottom: 0;
+      }
+      &.policy-news {
+        margin-top: 40px;
+      }
     }
-    .section-title {
-        width: 1200px;
-        color: #28323c;
-        font-size: 40px;
-        font-weight: bold;
-        margin-bottom: 0;
-        &.policy-news {
-            margin-top: 200px;
-        }
-        @media screen and (max-width: 768px) {
-            font-size: 24px;
-            margin: 0 0 -40px;
-            padding: 32px 24px;
-            width: 90%;
-            &.news-title {
-                padding-bottom: 0;
-            }
-            &.policy-news {
-                margin-top: 40px;
-            }
-        }
+  }
+  .success-story-page {
+    .success-story {
+      padding-top: 24px;
+      border-radius: 16px;
+      margin: 24px 32px 72px;
+      box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.15);
+      height: 100%;
+      @media screen and (min-width: 768px) {
+        width: 560px;
+      }
     }
-    .success {
-        .success-story {
-            padding-top: 24px;
-            border-radius: 16px;
-            margin: 24px 18px 72px;
-            box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.15);
-            @media screen and (min-width: 768px) {
-                width: 560px;
-            }
-        }
-        width: 100%;
-        @media screen and (min-width: 768px) {
-            overflow: scroll;
-        }
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      overflow: scroll;
+    }
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera*/
+    }
+    .success-stories {
+      @media screen and (min-width: 768px) {
+        width: 110%;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        overflow-x: scroll;
         -ms-overflow-style: none; /* IE, Edge */
         scrollbar-width: none; /* Firefox */
         &::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera*/
+          display: none; /* Chrome, Safari, Opera*/
         }
-        .success-stories {
-            @media screen and (min-width: 768px) {
-                width: 110%;
-                padding: 0 10%;
-                display: flex;
-                flex-direction: row;
-                overflow: scroll;
-                -ms-overflow-style: none; /* IE, Edge */
-                scrollbar-width: none; /* Firefox */
-                &::-webkit-scrollbar {
-                    display: none; /* Chrome, Safari, Opera*/
-                }
-                .desktop:not(:first-child) {
-                    width: 618px;
-                    margin: 0 -38px;
-                }
-            }
-            .image-content:not(:last-child) {
-                .mobile {
-                    margin-bottom: -70px;
-                }
-            }
+        -webkit-overflow-scrolling: touch;
+        .desktop:not(:first-child) {
+          width: 618px;
+          margin: 0 -38px;
         }
+      }
+      .image-content:not(:last-child) {
+        .mobile {
+          margin-bottom: -70px;
+        }
+      }
     }
+  }
 }
